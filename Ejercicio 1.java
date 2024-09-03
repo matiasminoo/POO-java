@@ -8,6 +8,7 @@ public class nashe {
 		System.out.println();
 		}
 	}
+		System.out.print("Programa terminado");
 	
 	}
 }
