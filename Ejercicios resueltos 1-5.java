@@ -1,9 +1,11 @@
+package nashe;
+
 import java.util.Scanner;
 import java.util.Random;
 
 
 
-public class nashe {
+public class main {
 	    public static void main(String[] args) {
 	    	Scanner scanner = new Scanner(System.in);
 	    	
@@ -14,7 +16,6 @@ public class nashe {
 	    	System.out.println("Ejercicio 4");
 	    	System.out.println("Ejercicio 5");
 	    	int opcion = scanner.nextInt();
-	    	scanner.close();
 	    	
 	    	switch(opcion) {
 	    	case 1:
@@ -31,6 +32,10 @@ public class nashe {
 	    		
 	    	case 4:
 	    		ej4();
+	    		break;
+	    		
+	    	case 5: 
+	    		ej5();
 	    		break;
 	    	}
 	       
@@ -84,6 +89,16 @@ public class nashe {
 	    	scanner.close();
 	    	
 	    	System.out.println("Bienvenido " + nombre);
+	    }
+	    public static void ej5() {
+	    	Scanner scanner = new Scanner(System.in);
+	    	System.out.println("Ingrese el radio de su circulo: ");
+	    	double r = scanner.nextDouble();
+	    	scanner.close();
+	    	double pi = 3.14;
+	    	double radioCuadrado = Math.pow(r, 2);
+	    	double area = pi * radioCuadrado;
+	    	System.out.println("El area de su circulo es de: " + area);
 	    }
 	    
 	}
